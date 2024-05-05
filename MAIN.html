@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Nivasa Sweets</title>
+  <style>
+    /* Basic styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f8cfc4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 100px;
+    }
+
+    .main-content {
+      background-color: #fce8e6;
+      padding: 20px;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .menu-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .menu-item img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .order-form {
+      max-width: 400px;
+      margin-top: 20px;
+    }
+
+    .order-form input,
+    .order-form textarea,
+    .order-form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sri Sri Nivaasa Sweets</h1>
+    <img src="lord_balaji_image.jpg" alt="Lord Balaji Venkateswara">
+  </header>
+
+  <div class="main-content">
+    <section id="home">
+      <div class="hero">
+        <h2>Welcome to Sri Nivasa Sweets</h2>
+        <p>Indulge in our delicious range of sweets and desserts.</p>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="rasgulla.jpg" alt="Rasgulla">
+          <h3>Rasgulla</h3>
+          <p>Price: $5 per dozen</p>
+          <label for="rasgulla-quantity">Quantity:</label>
+          <input type="number" id="rasgulla-quantity" min="0">
+        </div>
+        <div class="menu-item">
+          <img src="barfi.jpg" alt="Barfi">
+          <h3>Barfi</h3>
+          <p>Price: $8 per dozen</p>
+          <label for="barfi-quantity">Quantity:</label>
+          <input type="number" id="barfi-quantity" min="0">
+        </div>
+        <div class="menu-item">
+          <img src="chamcham.jpg" alt="Chamcham">
+          <h3>Chamcham</h3>
+          <p>Price: $5 per dozen</p>
+          <label for="chamcham-quantity">Quantity:</label>
+          <input type="number" id="chamcham-quantity" min="0">
+        </div>
+        <div class="menu-item">
+          <img src="samosa.jpg" alt="Samosa">
+          <h3>Samosa</h3>
+          <p>Price: $5 per dozen</p>
+          <label for="samosa-quantity">Quantity:</label>
+          <input type="number" id="samosa-quantity" min="0">
+        </div>
+        <div class="menu-item">
+          <img src="laddoo.jpg" alt="Motichur Laddoo">
+          <h3>Motichur Laddoo</h3>
+          <p>Price: $5 per dozen</p>
+          <label for="laddoo-quantity">Quantity:</label>
+          <input type="number" id="laddoo-quantity" min="0">
+        </div>
+        <div class="menu-item">
+          <img src="cake.jpg" alt="ChocolateCake">
+          <h3>ChocolateCake</h3>
+          <p>Price: $5 per dozen</p>
+          <label for="cake-quantity">Quantity:</label>
+          <input type="number" id="cake-quantity" min="0">
+        </div>
+	<div class="menu-item">
+          <img src="Kachodi.jpg" alt="Kachodi">
+          <h3>Kachodi</h3>
+          <p>Price: $5 per dozen</p>
+          <label for="Kachodi-quantity">Quantity:</label>
+          <input type="number" id="Kachodi-quantity" min="0">
+        </div>
+	<div class="menu-item">
+          <img src="noodles.jpg" alt="Noodles">
+          <h3>Noodles</h3>
+          <p>Price: $5 per dozen</p>
+          <label for="noodles-quantity">Quantity:</label>
+          <input type="number" id="noodles-quantity" min="0">
+        </div>
+	</div>
+	
+	<div class="menu-item">
+          <img src="cream.jpg" alt="Ice creams">
+          <h3>Ice creams</h3>
+          <p>Price: $5 per dozen</p>
+          <label for="cream-quantity">Quantity:</label>
+          <input type="number" id="cream-quantity" min="0">
+        </div>
+
+
+
+      <div class="order-form">
+        <h2>Place Your Order</h2>
+        <form id="order-form">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="tel" id="phone" placeholder="Your Phone Number" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="text" id="address" placeholder="Your Address" required>
+          <button type="submit">Place Order</button>
+          <button type="button" id="cancel-order">Cancel Order</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Sri Nivasa Sweets</h2>
+      <p>Welcome to Sri Nivasa Sweets! We have been serving delicious sweets and desserts since 1990.</p>
+      <p>Our journey began with a small shop in Tirupati, India, and we have since expanded to become one of the most beloved sweet shops in the region.</p>
+      <p>Our slogan: "Sweetness that Delights!"</p>
+    </section>
+
+    <section id="feedback">
+      <h2>Leave Feedback</h2>
+      <form id="feedback-form">
+        <textarea id="feedback-message" placeholder="Your Feedback"></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Sri Nivasa Sweets. All rights reserved. Visit us at: 123 Main Street, Tirupati, India.</p>
+  </footer>
+
+  <script>
+    // Handle order submission
+    const orderForm = document.getElementById('order-form');
+    orderForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Get form values
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const address = document.getElementById('address').value;
+
+      // Prepare order details
+      const orderDetails = {
+        name: name,
+        phone: phone,
+        email: email,
+        address: address,
+        items: []
+      };
+
+      // Get items from the menu
+      const menuItems = document.querySelectorAll('.menu-item');
+      menuItems.forEach(item => {
+        const itemName = item.querySelector('h3').textContent;
+        const quantity = parseInt(item.querySelector('input[type="number"]').value);
+        if (quantity > 0) {
+          orderDetails.items.push({ name: itemName, quantity: quantity });
+       
